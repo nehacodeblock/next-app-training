@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DashBoradPage = () => {
+const DashBoardPage = () => {
   return (
-    <div className='flex justify-center'>DashBorad</div>
+    <div className='flex justify-center'>DashBoardPage</div>
   )
 }
 
-export default DashBoradPage
+export default DashBoardPage
