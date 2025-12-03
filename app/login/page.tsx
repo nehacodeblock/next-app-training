@@ -22,11 +22,12 @@ const LoginPage = () => {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     console.log('form submitted', data);
     toast.success('login successfully');
+    methods.reset();
     router.push('/dashboard');
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 overflow-y-auto py-10">
       <FormProvider {...methods}>
         <form
           onSubmit={methods.handleSubmit(onSubmitData)}
